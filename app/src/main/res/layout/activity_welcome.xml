@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="32dp"
+    android:background="#F5F5F5">
+
+    <!-- ICON / LOGO -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="📋"
+        android:textSize="72sp"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- JUDUL APP -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FormRegistrasi"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="#1A237E"
+        android:gravity="center"/>
+
+    <!-- SUBJUDUL -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selamat datang! Silakan login\natau buat akun baru."
+        android:textSize="14sp"
+        android:textColor="#757575"
+        android:gravity="center"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="48dp"/>
+
+    <!-- TOMBOL LOGIN -->
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LOGIN"
+        android:textSize="16sp"
+        android:backgroundTint="#1A237E"
+        android:layout_marginBottom="12dp"/>
+
+    <!-- TOMBOL DAFTAR -->
+    <Button
+        android:id="@+id/btnDaftar"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BUAT AKUN BARU"
+        android:textSize="16sp"
+        android:textColor="#1A237E"/>
+
+</LinearLayout>

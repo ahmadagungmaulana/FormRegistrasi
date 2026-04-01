@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:spacing="12dp">
+
+
+        <!-- JUDUL -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Form Registrasi"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#1A237E"
+            android:gravity="center"
+            android:paddingBottom="8dp"/>
+
+        <!-- NAMA -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilNama"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nama Lengkap">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etNama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- EMAIL -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilEmail"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- PASSWORD -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilPassword"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            app:passwordToggleEnabled="true">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- CONFIRM PASSWORD -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilConfirmPassword"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Confirm Password"
+            app:passwordToggleEnabled="true">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etConfirmPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- JENIS KELAMIN -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Jenis Kelamin"
+            android:textStyle="bold"
+            android:textColor="#333333"/>
+
+        <RadioGroup
+            android:id="@+id/rgJenisKelamin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/rbLakiLaki"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Laki-laki"/>
+            <RadioButton
+                android:id="@+id/rbPerempuan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Perempuan"
+                android:layout_marginStart="16dp"/>
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tvErrorJenisKelamin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="* Pilih jenis kelamin"
+            android:textColor="#B00020"
+            android:visibility="gone"/>
+
+        <!-- HOBI -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hobi (pilih minimal 3)"
+            android:textStyle="bold"
+            android:textColor="#333333"/>
+
+        <CheckBox android:id="@+id/cbMembaca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Membaca"/>
+        <CheckBox android:id="@+id/cbOlahraga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Olahraga"/>
+        <CheckBox android:id="@+id/cbMusik"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Musik"/>
+        <CheckBox android:id="@+id/cbGaming"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gaming"/>
+        <CheckBox android:id="@+id/cbMasak"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Memasak"/>
+
+        <TextView
+            android:id="@+id/tvErrorHobi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="* Pilih minimal 3 hobi"
+            android:textColor="#B00020"
+            android:visibility="gone"/>
+
+        <!-- SPINNER KOTA -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Asal Kota"
+            android:textStyle="bold"
+            android:textColor="#333333"/>
+
+        <Spinner
+            android:id="@+id/spinnerKota"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/spinner_border"/>
+
+        <!-- TOMBOL SUBMIT -->
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DAFTAR"
+            android:layout_marginTop="8dp"/>
+
+    </LinearLayout>
+</ScrollView>
