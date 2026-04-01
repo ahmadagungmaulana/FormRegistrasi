@@ -44,7 +44,7 @@ Aplikasi ini memiliki fitur lengkap mulai dari login, registrasi, hingga validas
 ## 📸 Tampilan Aplikasi
 | Welcome Screen | Login | Registrasi |
 |---|---|---|
-| (screenshot) | (screenshot) | (screenshot) |
+| ![Welcome]( Welcome.png) | ![Login](Login.png) | ![Register](Formregister) |
 
 ## 🚀 Cara Menjalankan
 1. Clone repository ini
